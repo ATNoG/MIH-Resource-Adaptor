@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE resource-adaptor-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Resource Adaptor 1.1//EN" "http://java.sun.com/dtd/slee-resource-adaptor-jar_1_1.dtd">
+
+<resource-adaptor-jar>
+	<resource-adaptor id="raframe_2.0_RA">
+		<description>
+			IEEE 802.21 Media Independent Handover Protocol Resource Adaptor
+		</description>
+
+		<resource-adaptor-name>
+			MIHResourceAdaptor
+		</resource-adaptor-name>
+		<resource-adaptor-vendor>pt.it.av.atnog</resource-adaptor-vendor>
+		<resource-adaptor-version>1.0</resource-adaptor-version>
+
+		<!-- JSLEE v1.1 Specification, Early Draft Review Page 292
+			"A resource-adaptor-type-ref element.
+			This element references a resource adaptor type. One or more resource adaptor type reference
+			elements may be present in the deployment descriptor. It contains the following
+			elements:
+			* A description element.
+			This is an optional informational element.
+			* A resource-adaptor-type-name element
+			* A resource-adaptortype-vendor element
+			* A resource-adaptor-type-version
+			element.
+			These elements uniquely identify a resource type declared in a resourceadaptor-
+			type element specified in another deployment descriptor. A resource-
+			adaptor-type element declares a resource adaptor type." -->
+		<resource-adaptor-type-ref>
+			<resource-adaptor-type-name>
+				MIHResourceAdaptorType
+			</resource-adaptor-type-name>
+			<resource-adaptor-type-vendor>
+				pt.it.av.atnog
+			</resource-adaptor-type-vendor>
+			<resource-adaptor-type-version>
+				1.0
+			</resource-adaptor-type-version>
+		</resource-adaptor-type-ref>
+
+		<library-ref>
+			<library-name>mih-external-library</library-name>
+			<library-vendor>pt.it.av.atnog</library-vendor>
+			<library-version>1.0</library-version>
+		</library-ref>
+
+		<!-- JSLEE v1.1 Specification, Early Draft Review Page 292
+			"A resource-adaptor-classes element.
+			This element contains sub-elements that identify the classes that implement this resource
+			adaptor.
+			* A resource-adaptor-class element.
+			This element identifies a resource adaptor class, it contains the following subelements.
+			* A description element.
+			This is an optional informational element.
+			* A resource-adaptor-class-name element.
+			This element identifies the fully qualified class name of the resource adaptor class." -->
+		<resource-adaptor-classes>
+			<resource-adaptor-class>
+				<resource-adaptor-class-name>
+					pt.it.av.atnog.slee.resource.mih.ra.MessageResourceAdaptor
+				</resource-adaptor-class-name>
+			</resource-adaptor-class>
+		</resource-adaptor-classes>
+		<config-property>
+			<config-property-name>localPort</config-property-name>
+			<config-property-type>
+				java.lang.Integer
+			</config-property-type>
+			<config-property-value>1234</config-property-value>
+		</config-property>
+
+		<config-property>
+			<description></description>
+			<config-property-name>localHost</config-property-name>
+			<config-property-type>
+				java.lang.String
+			</config-property-type>
+			<config-property-value>127.0.0.1</config-property-value>
+		</config-property>
+
+		<config-property>
+			<config-property-name>remotePort</config-property-name>
+			<config-property-type>
+				java.lang.Integer
+			</config-property-type>
+			<config-property-value>1025</config-property-value>
+		</config-property>
+
+		<config-property>
+			<description></description>
+			<config-property-name>remoteHost</config-property-name>
+			<config-property-type>
+				java.lang.String
+			</config-property-type>
+			<config-property-value>127.0.0.1</config-property-value>
+		</config-property>
+	</resource-adaptor>
+</resource-adaptor-jar>

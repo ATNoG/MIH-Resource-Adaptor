@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE event-jar PUBLIC "-//Sun Microsystems, Inc.//DTD JAIN SLEE Event 1.1//EN" "http://java.sun.com/dtd/slee-event-jar_1_1.dtd">
+<event-jar>
+	<!-- JSLEE v1.1 Specification, Early Draft Review Page 289: "The event-definition
+		elements. The event-definition element contains the following sub-elements:
+		* An event-type-name element, event-type-vendor element and event-typeversion
+		element. These elements uniquely identify the event type defined in the custom
+		resource adaptor. * An event-class-name element. This element provides the
+		Java type for the event defined in the custom resource adaptor of the specified
+		event type. This means that all events of the event type must extend a common
+		base class or implement a common base interface. * A response-class-name
+		element. This element provides the Java type for the response to the event
+		defined in the custom resource adaptor of the specified event type. This
+		means that the response to this event of the event type must extend a common
+		base class or implement a common base interface." -->
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Capability_Discover_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Capability_Discover_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Capability_Discover_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Capability_Discover_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Register_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Register_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Register_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Register_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_DeRegister_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_DeRegister_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_DeRegister_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_DeRegister_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Subscribe_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Subscribe_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Subscribe_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Subscribe_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Unsubscribe_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Unsubscribe_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Unsubscribe_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Event_Unsubscribe_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Detected_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Up_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Down_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Parameters_Report_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Going_Down_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Handover_Imminent_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Handover_Complete_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_PDU_Transmit_Status_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Parameters_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Parameters_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Parameters_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Parameters_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Configure_Thresholds_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Configure_Thresholds_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Configure_Thresholds_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Configure_Thresholds_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Actions_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Actions_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Actions_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Link_Actions_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Candidate_Query_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Candidate_Query_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Candidate_Query_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Candidate_Query_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Candidate_Query_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Candidate_Query_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Candidate_Query_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Candidate_Query_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Query_Resoures_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Query_Resoures_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Query_Resoures_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Query_Resoures_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Commit_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Commit_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Commit_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Commit_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Commit_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Commit_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Commit_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Net_HO_Commit_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Commit_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Commit_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Commit_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Commit_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Complete_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Complete_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Complete_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_MN_HO_Complete_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Complete_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Complete_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Complete_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_N2N_HO_Complete_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Information_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Information_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Information_response</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Get_Information_confirm</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Push_Information_request</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+	<event-definition>
+		<event-type-name>pt.it.av.atnog.slee.resource.mih.message.incoming.MIH_Push_Information_indication</event-type-name>
+		<event-type-vendor>pt.it.av.atnog</event-type-vendor>
+		<event-type-version>1.0</event-type-version>
+		<event-class-name>pt.it.av.atnog.slee.resource.mih.message.MessageEvent</event-class-name>
+	</event-definition>
+
+</event-jar>
